@@ -39,7 +39,7 @@ import { Channel } from "hurtle";
 const { tx, rx } = new Channel();
 export { tx, rx };
 
-// req.js network response comes in...
+// req.js handle network response
 import { tx } from "./main.js";
 tx.send({ text: res.someJunk });
 
@@ -52,6 +52,6 @@ rx.recv((event) => {
 // b.js DOM manipulation
 import { rx } from "./main.js";
 rx.recv((event) => {
-    elementA.textContent = event.text;
+    elementB.textContent = event.text;
 });
 ```
