@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "rootDir": "lib",
+    "target": "ES2015",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "allowJs": false,
+    "declaration": true
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules"]
+}

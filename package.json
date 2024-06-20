@@ -1,0 +1,16 @@
+{
+  "name": "hurtle",
+  "version": "0.1.0",
+  "description": "Hurtle 🐢",
+  "author": " <sean watters sean@watters.io>",
+  "license": "MIT",
+  "repository": "https://github.com/seanwatters/hurtle",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
