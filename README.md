@@ -22,7 +22,7 @@ for (let i = 0; i < 10; i += 1) {
     tx.send(1);
 }
 
-console.log(state); // expect 10;
+console.log(state); // expect 10
 
 rx_cleanup();
 ```
