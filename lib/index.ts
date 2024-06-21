@@ -1,5 +1,3 @@
-type Cleanup = () => void;
-
 export class Sender<T> {
     target: EventTarget;
 
@@ -12,7 +10,7 @@ export class Sender<T> {
     }
 }
 
-type ReceiverCB<T> = (msg: T) => void;
+export type RecvCB<T> = (msg: T) => void;
 
 export class Receiver<T> {
     target: EventTarget;
@@ -21,7 +19,7 @@ export class Receiver<T> {
         this.target = target;
     }
 
-    recv(cb: ReceiverCB<T>): Cleanup {
+    recv(cb: RecvCB<T>) {
         const listener = (e: Event) => {
             const { detail: msg } = e as CustomEvent<T>;
             cb(msg);

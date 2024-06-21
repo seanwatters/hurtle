@@ -1,6 +1,6 @@
 # Hurtle 🐢
 
-0 dependency, channel-like API for JavaScript and TypeScript
+Zero dependency, channel-like API for JavaScript and TypeScript
 (basically just a slightly more ergonomic wrapper around `EventTarget`).
 
 ## Usage
@@ -59,5 +59,5 @@ rx.recv((event) => {
 ## Deno Usage
 
 ```javascript
-import { Channel } from "npm:hurtle@0.1.4/dist/cjs/index.js";
+import { Channel } from "npm:hurtle@1.0.0/dist/cjs/index.js";
 ```
